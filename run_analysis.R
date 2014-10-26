@@ -53,7 +53,7 @@ Data <- rbind(trainData, testData)
 #Load features
 features <- read.table("UCI HAR Dataset/features.txt")
 
-#Create columns names based on features and add 'activity' and 'subject'
+#Create columns names based on features and add 'Subject' and 'Activity'
 ColNames <- append(c("Subject", "Activity"), as.character(features[[2]]))
 
 # Set the column names of 'Data'
